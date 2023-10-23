@@ -8,11 +8,15 @@ public class Animal : MonoBehaviour
     private float deleteTime = 10f;
     private Vector2 mousePos;
     private BoxCollider2D boxCollider2D;
-    private float animalSpeed = 1;
+    private float animalSpeed = 2;
+
+    private Canvas UICanvas;
 
     // Start is called before the first frame update
     void Start()
     {
+        UICanvas= FindObjectOfType<Canvas>();
+
         //Movement
         if(transform.position.y > 6.4f)
         {
@@ -67,7 +71,9 @@ public class Animal : MonoBehaviour
 
         if(boxCollider2D.OverlapPoint(mousePos))
         {
-            Debug.Log("Overlap");
+            //Debug.Log("Overlap");
+
+            UICanvas.GetComponent<Score>().score++;
             Destroy(gameObject);
         }
     }
