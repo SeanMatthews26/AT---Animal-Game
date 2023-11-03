@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEngine;
 using Tobii.Gaming;
+using UnityEngine;
 
+[RequireComponent(typeof(GazeAware))]
 public class Animal : MonoBehaviour
 {
     private float deleteTime = 10f;
@@ -25,25 +26,25 @@ public class Animal : MonoBehaviour
         //Movement
         if(transform.position.y > 6.4f)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, -animalSpeed);
+            GetComponent<Rigidbody>().velocity = new Vector2(0, -animalSpeed);
         }
 
         if (transform.position.y < -6.4f)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, animalSpeed);
+            GetComponent<Rigidbody>().velocity = new Vector2(0, animalSpeed);
         }
 
         if (transform.position.x < -9.9f)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(animalSpeed, 0);
+            GetComponent<Rigidbody>().velocity = new Vector2(animalSpeed, 0);
         }
 
         if (transform.position.x > 9.9f)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-animalSpeed, 0);
+            GetComponent<Rigidbody>().velocity = new Vector2(-animalSpeed, 0);
         }
 
-        //StartCoroutine(DeleteAfterTime());
+        StartCoroutine(DeleteAfterTime());
     }
 
     private void OnEnable()
@@ -55,6 +56,11 @@ public class Animal : MonoBehaviour
     void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if(gazeAware.HasGazeFocus)
+        {
+            //Debug.Log("Gaze");
+        }
     }
 
     private IEnumerator DeleteAfterTime()
