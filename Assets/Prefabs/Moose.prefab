@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5499745566233731717}
   - component: {fileID: 2471339128922663145}
   - component: {fileID: -6843481530203988211}
+  - component: {fileID: -421433915977747094}
   m_Layer: 0
   m_Name: Moose
   m_TagString: Moose
@@ -171,3 +172,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.25, y: 2.375}
   m_EdgeRadius: 0
+--- !u!114 &-421433915977747094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790979610721431909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d87d489c55fc504987b709bbe1e4ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

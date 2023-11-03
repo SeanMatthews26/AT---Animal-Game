@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4847698600581927443}
   - component: {fileID: 3790611729927228680}
   - component: {fileID: 4264934902621462230}
+  - component: {fileID: 8925242302021312362}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Bear
@@ -171,3 +172,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.125, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &8925242302021312362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625270695800604323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d87d489c55fc504987b709bbe1e4ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

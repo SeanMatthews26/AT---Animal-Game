@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1808305555241125809}
   - component: {fileID: 3651895118648906882}
   - component: {fileID: -7492529025394222032}
+  - component: {fileID: 2146786939157961321}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Cow
@@ -171,3 +172,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1875, y: 1.75}
   m_EdgeRadius: 0
+--- !u!114 &2146786939157961321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309332323568460986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d87d489c55fc504987b709bbe1e4ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

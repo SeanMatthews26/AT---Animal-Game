@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Tobii.Gaming;
 
 public class Animal : MonoBehaviour
 {
@@ -12,10 +13,14 @@ public class Animal : MonoBehaviour
 
     private Canvas UICanvas;
 
+    private GazeAware gazeAware;
+
     // Start is called before the first frame update
     void Start()
     {
-        UICanvas= FindObjectOfType<Canvas>();
+        gazeAware = GetComponent<GazeAware>();
+
+        UICanvas = FindObjectOfType<Canvas>();
 
         //Movement
         if(transform.position.y > 6.4f)
@@ -63,7 +68,7 @@ public class Animal : MonoBehaviour
 
     public void Catch()
     {
-        if(boxCollider2D == null)
+        /*if(boxCollider2D == null)
         {
             Debug.Log("NoCollider");
             return;
@@ -74,8 +79,17 @@ public class Animal : MonoBehaviour
             //Debug.Log("Overlap");
 
             UICanvas.GetComponent<Score>().score++;
+            Destroy(gameObject);*/
+
+        if (gazeAware.HasGazeFocus)
+        {
+            Debug.Log("Caught");
+            UICanvas.GetComponent<Score>().score++;
             Destroy(gameObject);
         }
+
+
     }
+   
 
 }
