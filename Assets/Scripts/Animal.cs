@@ -87,14 +87,16 @@ public class Animal : MonoBehaviour
             UICanvas.GetComponent<Score>().score++;
             Destroy(gameObject);*/
 
+       
+    }
+
+    public void CatchWithEyes()
+    {
         if (gazeAware.HasGazeFocus)
         {
-            Debug.Log("Caught");
             UICanvas.GetComponent<Score>().score++;
             Destroy(gameObject);
         }
-
-
     }
    
 

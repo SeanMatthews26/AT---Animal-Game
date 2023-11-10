@@ -37,7 +37,7 @@ public class SpeechRecognition : MonoBehaviour
         GameObject[] animals = GameObject.FindGameObjectsWithTag(args.text);
         foreach (GameObject animal in animals)
         {
-            animal.GetComponent<Animal>().Catch();
+            animal.GetComponent<Animal>().CatchWithEyes();
         }
     }
 
