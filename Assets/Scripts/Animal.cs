@@ -4,7 +4,6 @@ using Unity.VisualScripting;
 using Tobii.Gaming;
 using UnityEngine;
 
-[RequireComponent(typeof(GazeAware))]
 public class Animal : MonoBehaviour
 {
     private float deleteTime = 10f;
