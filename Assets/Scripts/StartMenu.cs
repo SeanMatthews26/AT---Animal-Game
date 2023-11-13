@@ -30,11 +30,18 @@ public class StartMenu : MonoBehaviour
             Debug.Log("Start");
         }*/
 
-        Rect r = new Rect(rt.localPosition.x, rt.localPosition.y, rt.rect.width, rt.rect.height);
+        Debug.Log(TobiiAPI.GetGazePoint().Screen);
+
+        Rect r = new Rect(rt.position.x, rt.position.y, rt.rect.width, rt.rect.height);
 
         if (r.Contains(TobiiAPI.GetGazePoint().Screen))
         {
            Debug.Log("Start");
+            startButton.image.color = Color.red;
+        }
+        else
+        {
+            startButton.image.color = Color.white;
         }
     }
 }
