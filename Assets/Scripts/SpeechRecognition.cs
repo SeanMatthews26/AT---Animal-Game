@@ -18,6 +18,8 @@ public class SpeechRecognition : MonoBehaviour
     //Prefabs
     [SerializeField] private GameObject playObject;
     [SerializeField] private GameObject menuObject;
+    [SerializeField] private GameObject retryObject;
+    [SerializeField] private GameObject demonText;
 
     private bool paused = false;
 
@@ -36,6 +38,7 @@ public class SpeechRecognition : MonoBehaviour
         keywordActions.Add("Pause", Pause);
         keywordActions.Add("Play", Play);
         keywordActions.Add("Menu", Menu);
+        keywordActions.Add("Retry", Retry);
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognised;
@@ -49,7 +52,8 @@ public class SpeechRecognition : MonoBehaviour
 
         if(args.text == "Pause" ||
             args.text == "Play" ||
-            args.text == "Menu")
+            args.text == "Menu" ||
+            args.text == "Retry")
         {
             return;
         }
@@ -97,6 +101,24 @@ public class SpeechRecognition : MonoBehaviour
         }
     }
 
+    private void Retry()
+    {
+        if (paused && retryObject.GetComponent<GazeAware>().HasGazeFocus)
+        {
+            SceneManager.LoadScene(1);
+        }
+    }
+
+    public void LookedAtDemon()
+    {
+        Time.timeScale = 0;
+        paused = true;
+
+        retryObject.SetActive(true);
+        menuObject.SetActive(true);
+        demonText.SetActive(true);
+    }
+
     private void Cow()
     {
         Debug.Log("Cow");
@@ -141,6 +163,16 @@ public class SpeechRecognition : MonoBehaviour
             else
             {
                 menuObject.GetComponentInChildren<SpriteRenderer>().color = Color.white;
+            }
+
+            //RetryButton
+            if (retryObject.GetComponent<GazeAware>().HasGazeFocus)
+            {
+                retryObject.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+            }
+            else
+            {
+                retryObject.GetComponentInChildren<SpriteRenderer>().color = Color.white;
             }
         }
     }
