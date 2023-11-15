@@ -8,7 +8,6 @@ public class Demon : MonoBehaviour
     private SpeechRecognition speechRecognition;
 
     private GazeAware gazeAware;
-    private bool hasBeenSeen = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +20,9 @@ public class Demon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gazeAware.HasGazeFocus && !hasBeenSeen)
+        if (gazeAware.HasGazeFocus)
         {
             speechRecognition.LookedAtDemon();
-            hasBeenSeen = true;
         }
     }
 }

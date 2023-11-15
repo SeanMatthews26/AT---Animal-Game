@@ -39,14 +39,14 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playGazeAware.HasGazeFocus)
+        /*if(playGazeAware.HasGazeFocus)
         {
             playObject.GetComponentInChildren<SpriteRenderer>().color = Color.red;
         }
         else
         {
             playObject.GetComponentInChildren<SpriteRenderer>().color = Color.white;
-        }
+        }*/
     }
 
     private void Play()

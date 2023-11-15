@@ -111,12 +111,15 @@ public class SpeechRecognition : MonoBehaviour
 
     public void LookedAtDemon()
     {
-        Time.timeScale = 0;
-        paused = true;
+        if(!paused)
+        {
+            Time.timeScale = 0;
+            paused = true;
 
-        retryObject.SetActive(true);
-        menuObject.SetActive(true);
-        demonText.SetActive(true);
+            retryObject.SetActive(true);
+            menuObject.SetActive(true);
+            demonText.SetActive(true);
+        }
     }
 
     private void Cow()
@@ -142,7 +145,7 @@ public class SpeechRecognition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Pause button colours
+        /*//Pause button colours
         if(paused)
         {
             //PlayButton
@@ -174,6 +177,6 @@ public class SpeechRecognition : MonoBehaviour
             {
                 retryObject.GetComponentInChildren<SpriteRenderer>().color = Color.white;
             }
-        }
+        }*/
     }
 }
