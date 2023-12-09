@@ -39,7 +39,7 @@ public class SpawnManager : MonoBehaviour
         int randAnimal = Random.Range(0, animal.Length);
         GameObject spawningAnimal = animal[randAnimal];
 
-        int animalSpawnPosInt = Random.Range(0, 5);
+        int animalSpawnPosInt = Random.Range(1, 5);
         //int animalSpawnPosInt = 4;
         Vector2 animalSpawnPos;
 

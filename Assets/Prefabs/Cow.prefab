@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2146786939157961321}
   - component: {fileID: 5511313565305578735}
   - component: {fileID: -701086733447108854}
+  - component: {fileID: -3848026088467444624}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Cow
@@ -160,3 +161,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3848026088467444624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309332323568460986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d490f8380a798e41a99b601f3779f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

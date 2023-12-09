@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5134066748626311562}
   - component: {fileID: 4218007453597560407}
   - component: {fileID: 7121308614641214957}
+  - component: {fileID: 8300456073983258382}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,7 +120,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.25, y: 2.375, z: 0.2}
+  m_Size: {x: 1.25, y: 1.2107648, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4218007453597560407
 Rigidbody:
@@ -158,5 +159,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b184facfea0a60047983a748602e7d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8300456073983258382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025549818291920825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d490f8380a798e41a99b601f3779f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
