@@ -19,6 +19,8 @@ public class SpeechRecognition : MonoBehaviour
     [SerializeField] private GameObject playObject;
     [SerializeField] private GameObject menuObject;
     [SerializeField] private GameObject retryObject;
+    [SerializeField] private GameObject nextLevelObject;
+    
     [SerializeField] private GameObject demonText;
 
     private bool paused = false;
@@ -91,6 +93,11 @@ public class SpeechRecognition : MonoBehaviour
             playObject.SetActive(false);
             menuObject.SetActive(false);
         }
+
+        if(paused && nextLevelObject.GetComponent<GazeAware>().HasGazeFocus)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     private void Menu()
@@ -105,7 +112,7 @@ public class SpeechRecognition : MonoBehaviour
     {
         if (paused && retryObject.GetComponent<GazeAware>().HasGazeFocus)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 
@@ -178,5 +185,10 @@ public class SpeechRecognition : MonoBehaviour
                 retryObject.GetComponentInChildren<SpriteRenderer>().color = Color.white;
             }
         }*/
+    }
+
+    public void SetPaused()
+    {
+        paused = true;
     }
 }

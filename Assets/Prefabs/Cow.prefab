@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3cc13829d35c94bab0191b30eefeeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UICanvas: {fileID: 5196929064020535393, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
 --- !u!114 &2146786939157961321
 MonoBehaviour:
   m_ObjectHideFlags: 0

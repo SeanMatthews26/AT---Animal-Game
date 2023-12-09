@@ -8,6 +8,7 @@ TagManager:
   - Bear
   - Sheep
   - Moose
+  - UICanvas
   layers:
   - Default
   - TransparentFX

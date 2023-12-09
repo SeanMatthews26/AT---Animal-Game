@@ -10,6 +10,7 @@ public class Animal : MonoBehaviour
     private BoxCollider2D boxCollider2D;
 
     private Canvas UICanvas;
+    private Score score;
 
     private GazeAware gazeAware;
 
@@ -18,12 +19,14 @@ public class Animal : MonoBehaviour
     {
         gazeAware = GetComponent<GazeAware>();
 
-        UICanvas = FindObjectOfType<Canvas>();
+        //UICanvas = FindObjectOfType<Canvas>();
+        score = GameObject.FindAnyObjectByType<Score>();
     }
 
     private void OnEnable()
     {
         boxCollider2D = GetComponent<BoxCollider2D>();
+
     }
 
     // Update is called once per frame
@@ -59,10 +62,9 @@ public class Animal : MonoBehaviour
     {
         if (gazeAware.HasGazeFocus)
         {
-            UICanvas.GetComponent<Score>().score++;
+            //UICanvas.GetComponent<Score>().AddToScore();
+            score.AddToScore();
             Destroy(gameObject);
         }
     }
-   
-
 }
