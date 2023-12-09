@@ -6,10 +6,8 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
-    private float deleteTime = 10f;
     private Vector2 mousePos;
     private BoxCollider2D boxCollider2D;
-    private float animalSpeed = 2;
 
     private Canvas UICanvas;
 
@@ -21,29 +19,6 @@ public class Animal : MonoBehaviour
         gazeAware = GetComponent<GazeAware>();
 
         UICanvas = FindObjectOfType<Canvas>();
-
-        //Movement
-        if(transform.position.y > 6.4f)
-        {
-            GetComponent<Rigidbody>().velocity = new Vector2(0, -animalSpeed);
-        }
-
-        if (transform.position.y < -6.4f)
-        {
-            GetComponent<Rigidbody>().velocity = new Vector2(0, animalSpeed);
-        }
-
-        if (transform.position.x < -9.9f)
-        {
-            GetComponent<Rigidbody>().velocity = new Vector2(animalSpeed, 0);
-        }
-
-        if (transform.position.x > 9.9f)
-        {
-            GetComponent<Rigidbody>().velocity = new Vector2(-animalSpeed, 0);
-        }
-
-        StartCoroutine(DeleteAfterTime());
     }
 
     private void OnEnable()
@@ -60,15 +35,6 @@ public class Animal : MonoBehaviour
         {
             //Debug.Log("Gaze");
         }
-    }
-
-    private IEnumerator DeleteAfterTime()
-    {
-        WaitForSeconds wait = new WaitForSeconds(deleteTime);
-
-        yield return wait;
-
-        Destroy(gameObject);
     }
 
     public void Catch()
