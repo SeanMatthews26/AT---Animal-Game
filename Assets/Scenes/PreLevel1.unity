@@ -1073,6 +1073,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3882856756067507136, guid: a4698ce3c9b4b984490d497b32754bee, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3971880870773841188, guid: a4698ce3c9b4b984490d497b32754bee, type: 3}
       propertyPath: m_Name
       value: GazePoint
