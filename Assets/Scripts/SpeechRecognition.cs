@@ -36,6 +36,18 @@ public class SpeechRecognition : MonoBehaviour
         keywordActions.Add("Sheep", Sheep);
         keywordActions.Add("Moose", Moose);
 
+        keywordActions.Add("Duck", Duck);
+        keywordActions.Add("Chicken", Chicken);
+        keywordActions.Add("Swan", Swan);
+
+        keywordActions.Add("Horse", Horse);
+        keywordActions.Add("Goat", Goat);
+        keywordActions.Add("Pig", Pig);
+
+        keywordActions.Add("Flamingo", Flamingo);
+        keywordActions.Add("Fox", Fox);
+        keywordActions.Add("Hedgehog", Hedgehog);
+
         //Other functions called by speech
         keywordActions.Add("Pause", Pause);
         keywordActions.Add("Play", Play);
@@ -45,6 +57,51 @@ public class SpeechRecognition : MonoBehaviour
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognised;
         keywordRecognizer.Start();
+    }
+
+    private void Hedgehog()
+    {
+
+    }
+
+    private void Fox()
+    {
+        
+    }
+
+    private void Flamingo()
+    {
+       
+    }
+
+    private void Pig()
+    {
+        
+    }
+
+    private void Goat()
+    {
+       
+    }
+
+    private void Horse()
+    {
+        
+    }
+
+    private void Swan()
+    {
+       
+    }
+
+    private void Chicken()
+    {
+        
+    }
+
+    private void Duck()
+    {
+        
     }
 
     private void OnKeywordsRecognised(PhraseRecognizedEventArgs args)

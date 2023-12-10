@@ -9,6 +9,15 @@ TagManager:
   - Sheep
   - Moose
   - UICanvas
+  - Horse
+  - Pig
+  - Goat
+  - Duck
+  - Chicken
+  - Swan
+  - Fox
+  - Hedgehog
+  - Flamingo
   layers:
   - Default
   - TransparentFX
