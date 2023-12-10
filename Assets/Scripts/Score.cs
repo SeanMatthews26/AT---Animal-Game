@@ -19,6 +19,8 @@ public class Score : MonoBehaviour
 
     [SerializeField] GameObject winText;
 
+    [SerializeField] bool lastLevel = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +46,10 @@ public class Score : MonoBehaviour
             Time.timeScale = 0;
             speechRecognitionScript.SetPaused();
 
-            nextLevelObject.SetActive(true);
+            if(!lastLevel)
+            {
+                nextLevelObject.SetActive(true);
+            }
             menuObject.SetActive(true);
 
             winText.SetActive(true);

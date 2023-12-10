@@ -653,7 +653,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Level Complete! \nGo to the next level?"
+  m_text: 'Congratulations!
+
+    You''ve Won!
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1234,11 +1238,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5a846d2890ef6f4082020a49700b2bb, type: 3}
---- !u!1 &1672769456 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4537081827329005788, guid: e5a846d2890ef6f4082020a49700b2bb, type: 3}
-  m_PrefabInstance: {fileID: 1672769455}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2117510647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,7 +1341,7 @@ PrefabInstance:
     - target: {fileID: 6982688378343162333, guid: 2ae8997f3200d83479d342a09a8f9de6, type: 3}
       propertyPath: nextLevelObject
       value: 
-      objectReference: {fileID: 1672769456}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1476,6 +1475,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1056050501}
     - target: {fileID: 5639309868282087226, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
+      propertyPath: lastLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639309868282087226, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -1485,12 +1488,12 @@ PrefabInstance:
       objectReference: {fileID: 553270368}
     - target: {fileID: 5639309868282087226, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
       propertyPath: scoreNeeded
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5639309868282087226, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
       propertyPath: nextLevelObject
       value: 
-      objectReference: {fileID: 1672769456}
+      objectReference: {fileID: 0}
     - target: {fileID: 5639309868282087226, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
       propertyPath: scoreNeededText
       value: 
