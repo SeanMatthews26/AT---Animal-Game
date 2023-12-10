@@ -1402,12 +1402,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
       propertyPath: animal.Array.size
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
       propertyPath: animal.Array.data[4]
       value: 
-      objectReference: {fileID: 9147160647334220237, guid: 448caf9dc8ef30549bd193bbe4588309, type: 3}
+      objectReference: {fileID: 3023637594077620624, guid: 7d0b3c8ffb916bb4aaeee8ae100a4179, type: 3}
     - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
       propertyPath: animal.Array.data[5]
       value: 
@@ -1415,31 +1415,7 @@ PrefabInstance:
     - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
       propertyPath: animal.Array.data[6]
       value: 
-      objectReference: {fileID: 5294687527956746127, guid: deff454f9bdee7a40a586bc98c79b849, type: 3}
-    - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
-      propertyPath: animal.Array.data[7]
-      value: 
-      objectReference: {fileID: 4516097463995460609, guid: 40d7b28b8d007a14a8c4490860bb86a7, type: 3}
-    - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
-      propertyPath: animal.Array.data[8]
-      value: 
-      objectReference: {fileID: 2041981192245576310, guid: f7677ac7ae54ff54f8d061e3cd4c5683, type: 3}
-    - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
-      propertyPath: animal.Array.data[9]
-      value: 
-      objectReference: {fileID: 378048743871689724, guid: 2ef1ec9fa658a4a48b14d2217e6a041b, type: 3}
-    - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
-      propertyPath: animal.Array.data[10]
-      value: 
-      objectReference: {fileID: 1443625254016172382, guid: 97bbff7eaac93e246970ccbc5354c0d6, type: 3}
-    - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
-      propertyPath: animal.Array.data[11]
-      value: 
-      objectReference: {fileID: 7942973907278186788, guid: 59ab8432464a9a548a3d0fef3f7d7b9b, type: 3}
-    - target: {fileID: 4234886658434326373, guid: dd9636df96ee9854b84811a34880f3b3, type: 3}
-      propertyPath: animal.Array.data[12]
-      value: 
-      objectReference: {fileID: 3023637594077620624, guid: 7d0b3c8ffb916bb4aaeee8ae100a4179, type: 3}
+      objectReference: {fileID: 9147160647334220237, guid: 448caf9dc8ef30549bd193bbe4588309, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1485,7 +1461,7 @@ PrefabInstance:
       objectReference: {fileID: 553270368}
     - target: {fileID: 5639309868282087226, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
       propertyPath: scoreNeeded
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5639309868282087226, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
       propertyPath: nextLevelObject
@@ -1696,10 +1672,6 @@ PrefabInstance:
     - target: {fileID: 5012521638227609872, guid: a8daac69bb9f2c84b8d7e5d0d47fb2ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5504156796802553421, guid: a8daac69bb9f2c84b8d7e5d0d47fb2ff, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
