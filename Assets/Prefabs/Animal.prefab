@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2600274856200723160}
   - component: {fileID: 4476635639645207338}
   - component: {fileID: 8440880991697068908}
-  - component: {fileID: 8237072429880409715}
   - component: {fileID: 8762407442025035640}
   - component: {fileID: 2471329451862971350}
   m_Layer: 0
@@ -101,7 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3cc13829d35c94bab0191b30eefeeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UICanvas: {fileID: 5196929064020535393, guid: e93c23ca76947c04dbafbd029106630b, type: 3}
 --- !u!114 &8440880991697068908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,27 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d87d489c55fc504987b709bbe1e4ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &8237072429880409715
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3022129163357333313}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.125, y: 1.5, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8762407442025035640
 Rigidbody:
   m_ObjectHideFlags: 0
