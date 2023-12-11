@@ -169,7 +169,7 @@ public class SpeechRecognition : MonoBehaviour
     {
         if (paused && retryObject.GetComponent<GazeAware>().HasGazeFocus)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
