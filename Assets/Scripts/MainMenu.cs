@@ -16,13 +16,18 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject playObject;
     private GazeAware playGazeAware;
 
+    [SerializeField] private GameObject levelObject;
+    private GazeAware levelGazeAware;
+
     // Start is called before the first frame update
     void Start()
     {
         playGazeAware = playObject.GetComponent<GazeAware>();
+        levelGazeAware = levelObject.GetComponent<GazeAware>();
 
         //Speech Keywords
         keywordActions.Add("play", Play);
+        keywordActions.Add("level", Level);
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognised;
@@ -54,6 +59,14 @@ public class MainMenu : MonoBehaviour
         if(playGazeAware.HasGazeFocus)
         {
             SceneManager.LoadScene(1);
+        }
+    }
+
+    private void Level()
+    {
+        if(levelGazeAware.HasGazeFocus)
+        {
+            SceneManager.LoadScene(9);
         }
     }
 }
