@@ -62,7 +62,6 @@ public class Animal : MonoBehaviour
     {
         if (gazeAware.HasGazeFocus)
         {
-            //UICanvas.GetComponent<Score>().AddToScore();
             score.AddToScore();
             Destroy(gameObject);
         }
